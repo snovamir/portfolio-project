@@ -83,8 +83,8 @@ p {
   line-height: 1.5;
 }
 
-.content p{
-    font-size: 14px;
+.content p {
+  font-size: 14px;
 }
 
 .content-container img {
@@ -117,6 +117,37 @@ p {
   padding: 120px 60px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -135,5 +166,8 @@ p {
   .content {
     text-align: center;
     padding: 0;
+  }
+  nav a{
+    font-size: 14px;
   }
 }
